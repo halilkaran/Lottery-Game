@@ -6,7 +6,7 @@ let produceNumber = () => {
 let arr = [""];
   while (arr.length < 7) {
     let r = Math.floor(Math.random() * 100) + 1;
-    if (arr.indexOf(r) === -1 && r < 91) arr.push(r);
+    if (!arr.includes(r) && r < 91) arr.push(r);
     }
     
   
@@ -14,7 +14,7 @@ let arr = [""];
     let arrr = arr.sort();
     while (arr.length < 8) {
         let j = Math.floor(Math.random() * 100) + 1;
-        if (arrr.indexOf(j) === -1 && j < 91) arrr.push(j);
+        if (!arrr.includes(j) && j < 91) arrr.push(j);
     }
     while (arr.length < 9) {
         let ss = Math.floor(Math.random() * 100) + 1;
